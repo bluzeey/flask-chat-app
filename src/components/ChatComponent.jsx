@@ -1,4 +1,3 @@
-import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
@@ -17,7 +16,7 @@ export default function AlignItemsList() {
         <ListItemText
           primary="Brunch this weekend?"
           secondary={
-            <React.Fragment>
+            <>
               <Typography
                 sx={{ display: 'inline' }}
                 component="span"
@@ -27,7 +26,7 @@ export default function AlignItemsList() {
                 Ali Connors
               </Typography>
               {" — I'll be in your neighborhood doing errands this…"}
-            </React.Fragment>
+            </>
           }
         />
       </ListItem>
@@ -39,7 +38,7 @@ export default function AlignItemsList() {
         <ListItemText
           primary="Summer BBQ"
           secondary={
-            <React.Fragment>
+            <>
               <Typography
                 sx={{ display: 'inline' }}
                 component="span"
@@ -49,7 +48,7 @@ export default function AlignItemsList() {
                 to Scott, Alex, Jennifer
               </Typography>
               {" — Wish I could come, but I'm out of town this…"}
-            </React.Fragment>
+            </>
           }
         />
       </ListItem>
@@ -61,7 +60,7 @@ export default function AlignItemsList() {
         <ListItemText
           primary="Oui Oui"
           secondary={
-            <React.Fragment>
+            <>
               <Typography
                 sx={{ display: 'inline' }}
                 component="span"
@@ -71,7 +70,7 @@ export default function AlignItemsList() {
                 Sandra Adams
               </Typography>
               {' — Do you have Paris recommendations? Have you ever…'}
-            </React.Fragment>
+            </>
           }
         />
       </ListItem>

@@ -7,10 +7,6 @@ function ChatScreen() {
     <div className='chatWrapper'>
       <div className='chatscreen'>
       <Typography variant="h5">Chatscreen</Typography>
-      <ol>
-        <li>Message 1</li>
-        <li>Message 2</li>
-      </ol>
       </div>
       <Message/>
     </div>
