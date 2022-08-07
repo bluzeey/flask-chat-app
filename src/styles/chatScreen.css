@@ -1,0 +1,13 @@
+.chatWrapper{
+    flex-direction: column;
+    flex:2 1 auto;
+}
+
+.chatscreen{
+    background-color: aquamarine;
+    height: 90vh;
+}
+
+.Message{
+    width:100%;
+}

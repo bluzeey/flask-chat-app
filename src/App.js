@@ -1,9 +1,12 @@
 import './App.css';
-
+import Message from './components/Message';
+import Userlist from './components/Userlist';
+import ChatScreen from './components/ChatScreen';
 function App() {
   return (
-    <div className="App">
-      Flask App Frontend
+    <div className="wrapper">
+      <Userlist/>
+      <ChatScreen/>
     </div>
   );
 }
