@@ -1,4 +1,4 @@
-# Simple ReactJS + Flask App using WebSockets (socket.io)
+# Messaging Chat Application
 
 This simple App connects a Flask server to a React client
 and opens a two way interactive communication using WebSocket technology with the socket.io library.
