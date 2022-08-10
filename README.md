@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Messaging Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This simple App connects a Flask server to a React client
+and opens a two way interactive communication using WebSocket technology with the socket.io library.
+With WebSockets you can send messages to a server and receive event driven responses without having
+to poll a server.
 
-## Available Scripts
+This repo was created to help users create WebSocket communication protocols along with regular HTTP communication using a Python Flask server and a Javascript React client.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+**Client:** ReactJS,socket.io,socket.io-client
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Server:** Python3,eventlet,Flask-Cors,Flask-SocketIO
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Make sure you have installed Node.js, npm, Python3, and pip.
+After installation please follow the instructions below to download the repo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Within the terminal window, create a folder in your local drive.
+- Navigate to the folder created.
+- Run the following command:
 
-### `npm run build`
+```bash
+  git clone https://github.com/adrianhuber17/webSocket-App.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Navigate into the new sub-folder created called **WebSocket-App**.
+- Run the following commands to create an environment and install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  python3 -m venv env
+  source env/bin/activate
+  pip install -r requirements.txt
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Navigate into the /**front-end** folder and run the following command:
 
-### `npm run eject`
+```bash
+  npm i react-scripts
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open two terminal windows, one to be used by the Flask server and the other
+to be used by the React client.
+Make sure the server is initialized before the client to avoid any issues.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Terminal **window 1** - start the server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  cd webSocket-App
+  source env/bin/activate
+  python3 server.py
+```
 
-## Learn More
+Terminal **window 2** - start the client:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  cd webSocket-App/front-end
+  npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demo
 
-### Code Splitting
+Works with two browsers. Use Google Chrome/Firefox and you can check the application for a conversation. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
