@@ -36,7 +36,7 @@ export default function WebSocketCall({ socket }) {
       <Button onClick={handleSubmit}>submit</Button>
       <List>
         {messages.map((message, ind) => {
-          return <ListItem key={ind}>{message}</ListItem>;
+          return <ListItem key={ind}><span>{message}</span></ListItem>;
         })}
       </List>
     </Card>
